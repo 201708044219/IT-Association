@@ -1,10 +1,10 @@
 server:
   port: 8088
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml    #mybatis配置文件所在路径
-  type-aliases-package: com.edu.zut.itassociation.entities               #所有Entity别名类所在包
-  mapper-locations: classpath:mybatis/mapper/**/*.xml                  #mapper映射文件路径
+#mybatis:
+#  config-location: classpath:mybatis/mybatis.cfg.xml    #mybatis配置文件所在路径
+#  type-aliases-package: com.edu.zut.itassociation.entities               #所有Entity别名类所在包
+#  mapper-locations: classpath:mybatis/mapper/**/*.xml                  #mapper映射文件路径
 
 
 
@@ -27,3 +27,7 @@ spring:
 
 
 
+#mybatis-plus 日志配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
