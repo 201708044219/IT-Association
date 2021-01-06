@@ -31,7 +31,6 @@ public class Person {
 
 //    逻辑删除的注解
     @TableLogic
-    @TableField(fill = FieldFill.INSERT)
     private Integer deleted;
 
 

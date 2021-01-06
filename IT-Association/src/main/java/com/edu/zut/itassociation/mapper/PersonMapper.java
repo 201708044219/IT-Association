@@ -2,7 +2,6 @@ package com.edu.zut.itassociation.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.edu.zut.itassociation.entities.Person;
-import org.hamcrest.BaseMatcher;
 import org.springframework.stereotype.Repository;
 
 /**

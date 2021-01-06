@@ -65,7 +65,7 @@ class ItAssociationApplicationTests {
 //        调用mp分页查询的方法
 //        调用mp分页铲鲟过程中，底层封装
 //        把分页所有数据封装到page对象里面
-        personMapper.selectPage(page, null);
+          personMapper.selectPage(page, null);
 
 //        获取配置中的当前页
         System.out.println(page.getCurrent());
