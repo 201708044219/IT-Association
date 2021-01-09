@@ -43,7 +43,7 @@ public class MybatisPlusConfig {
         // DbType：数据库类型(根据类型获取应使用的分页方言)
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL)); // 分页插件
 
-        interceptor.addInnerInterceptor(new IllegalSQLInnerInterceptor());  //sql性能规范
+//        interceptor.addInnerInterceptor(new IllegalSQLInnerInterceptor());  //sql性能规范
 
         return interceptor;
     }

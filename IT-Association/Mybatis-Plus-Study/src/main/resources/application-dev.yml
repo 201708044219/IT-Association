@@ -10,8 +10,6 @@ server:
 
 
 spring:
-  profiles:
-    active: dev
   # 数据源配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource

@@ -1,5 +1,6 @@
 package com.edu.zut.itassociation;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.edu.zut.itassociation.entities.Person;
 import com.edu.zut.itassociation.mapper.PersonMapper;
@@ -81,5 +82,36 @@ class ItAssociationApplicationTests {
         System.out.println(page.hasNext());
         //是否有下页
         System.out.println(page.hasPrevious());
+    }
+
+
+    /**
+     * @Description: 条件查询演示
+     * @Param: []
+     * @return: void
+     * @Author: lyl
+     * @Date: 2021/1/9
+     */
+    @Test
+    public void  testSelectQuery(){
+        //创建QueryWrapper对象
+        QueryWrapper<Person> wrapper=new QueryWrapper<>();
+
+        //通过QueryWrapper设置条件
+
+        //ge 大于 gt 大于等于 le小于  lt小于等于
+        //查询 age>=30记录
+        wrapper.ge("age",30);  //第一个参数字段的名字。第二个参数为需要设置的数值。
+        List<Person> people = personMapper.selectList(wrapper);
+        System.out.println(people);
+
+        //eq 等于 ne 不等于
+        //between 表示范围
+        //like 模糊查询
+        //orderByDesc 排序（降序）  orderByAsc 升序
+        //last 直接拼接到sql的最后
+        //指定要查询的列
+        wrapper.select("id");
+
     }
 }
