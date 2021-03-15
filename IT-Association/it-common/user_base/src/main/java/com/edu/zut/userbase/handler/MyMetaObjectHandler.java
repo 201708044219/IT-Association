@@ -1,4 +1,4 @@
-package com.edu.zut.teachermanage.handler;
+package com.edu.zut.userbase.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
@@ -30,6 +30,7 @@ class DateObjectHandler implements MetaObjectHandler {
         this.setFieldValByName("gmtCreate",new Date(),metaObject);
         //修改时间的自动填充
         this.setFieldValByName("gmtModified",new Date(),metaObject);
+        this.setFieldValByName("isDelete",false,metaObject);
         //乐观锁的自动填充
 //        this.setFieldValByName("version",1,metaObject);
 

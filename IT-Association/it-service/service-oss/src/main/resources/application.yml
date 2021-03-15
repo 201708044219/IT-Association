@@ -1,0 +1,18 @@
+##服务端口
+#server:
+#  port: 8002
+##服务名
+#spring:
+#  application:
+#    name: user-oss
+#  profiles:
+#    active: dev    #环境配置 dev、 test 、 prod
+#
+#aliyun:
+#  oss:
+#    file:
+#      endpoint: oss-cn-beijing.aliyuncs.com
+#      keyid: LTAI4G8i7whSf2sN7V5vzZk8
+#      keysecret: KT3ZONKgs1PtLZ7KuvTrFgaOd57GPU
+#      bucketname: com-edu-zut-itassociation
+#
